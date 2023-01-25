@@ -1,8 +1,9 @@
 import { newLine } from "./line";
-import { PolarPoint, newPolarPoint } from "./points/polarPoint";
+import { Point } from "./points/point";
+import { polarPoint } from "./points/polarpoint";
 
-const point1: PolarPoint = newPolarPoint(2, 0);
-const point2: PolarPoint = newPolarPoint(4, Math.PI);
+const point1: Point = polarPoint(2, 0);
+const point2: Point = polarPoint(4, Math.PI);
 
 const line = newLine(point1, point2);
 
